@@ -3,16 +3,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
-public class LoginTests {
+public class LoginTests        {
     WebDriver wd;
 
     @BeforeClass
     public void preCondition(){
         //open browser
-        wd=new ChromeDriver();
+        wd = new ChromeDriver();
         //open site
-        //wd.navigate().to("");
+       // wd.navigate().to("");
         wd.get("");
     }
     @Test
@@ -29,8 +28,8 @@ public class LoginTests {
         //submit from
     }
 
-    @Test
-    public void loginWrongPassword(){
+   @Test
+   public void loginWrongPassword(){
         //open form
         //fill form
         //submit from
